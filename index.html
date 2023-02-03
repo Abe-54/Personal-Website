@@ -1,10 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&family=Outfit:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <a class="nav__logo" href="/">Abraham</a>
+    <span class="material-symbols-rounded nav__toggler">
+      menu
+    </span>
+    <ul class="list nav__list nav__content">
+      <li class="nav__item"><a href="#home">Home</a></li>
+      <li class="nav__item"><a href="#about">About Me</a></li>
+      <li class="nav__item"><a href="#skills">Skills</a></li>
+      <li class="nav__item"><a href="#">Games</a></li>
+      <li class="nav__item"><a href="#">Multimedia</a></li>
+    </ul>
+  </nav>
+
+  <section class="block block--dark hero" id="home">
+    <div class="container grid grid--1x2">
+      <header class="block__header hero__content">
+        <h1 class="block__heading">Abraham Rubio</h1>
+        <p class="hero__tagline">
+          Software Engineer | Game Developer | Web Developer
+          <br><br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, dignissimos?
+        </p>
+
+        <button class="btn btn--primary">Contact</button>
+      </header>
+      <div class="container hero-image__container">
+        <div class="circle">
+          <img class="hero__image" src="images/Professional_Picture_2k_NoBG.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block--about" id="about">
+    <div class="container">
+      <article class="grid grid--1x2">
+        <div>
+          <h2 class="feature__heading">About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            voluptatum consectetur necessitatibus non magnam illum nesciunt,
+            soluta quibusdam deserunt quia!
+          </p>
+        </div>
+        <img class="feature__image" src="https://via.placeholder.com/585x375" alt="" />
+      </article>
+    </div>
+  </section>
+
+  <section class="block block--skills" id="skills">
+    <div class="container">
+      <header>
+        <h2 class="block__heading">Skillsets</h2>
+      </header>
+      <div class="grid grid--1x2">
+        <div class="skill">
+          <div class="card card--primary">
+            <header class="card__header">Programming Languages</header>
+            <div class="card__body">
+              <ul class="list list--inline">
+                <li class="list__item"><i class="devicon-java-plain"></i>
+                  <p>Java</p>
+                </li>
+                <li class="list__item"><i class="devicon-csharp-plain"></i>
+                  <p>C#</p>
+                </li>
+                <li class="list__item"><i class="devicon-python-plain"></i>
+                  <p>Python</p>
+                </li>
+                <li class="list__item"><i class="devicon-html5-plain"></i>
+                  <p>HTML</p>
+                </li>
+                <li class="list__item"><i class="devicon-css3-plain"></i>
+                  <p>CSS</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="card card--primary">
+            <header class="card__header">Tools</header>
+            <div class="card__body">
+              <ul class="list list--inline">
+                <li class="list__item"><i class="devicon-unity-original"></i>
+                  <p>Unity</p>
+                </li>
+                <li class="list__item"><i class="devicon-vscode-plain"></i>
+                  <p>VS Code</p>
+                </li>
+                <li class="list__item"><i class="devicon-github-original"></i>
+                  <p>Github</p>
+                </li>
+                <li class="list__item"><i class="devicon-androidstudio-plain"></i>
+                  <p>Android Studio</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
