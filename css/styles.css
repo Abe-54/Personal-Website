@@ -158,11 +158,6 @@ a {
     display: grid;
 }
 
-.grid--fill-center {
-    justify-content: space-evenly;
-    align-content: space-evenly;
-}
-
 @media screen and (min-width: 945px) {
     .grid--1x2 {
         grid-template-columns: repeat(2, 1fr);
@@ -448,7 +443,7 @@ a {
     gap: 8rem 4rem;
 }
   
-.block-skills .card {
+.block--skills .card {
     max-width: 500px;
     margin: 0 auto;
 }
