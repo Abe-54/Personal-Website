@@ -461,12 +461,17 @@ a {
 }
 
 .game {
-  gap: 0rem 2rem;
-  margin: 2rem 0rem;
+    gap: 0rem 2rem;
+    margin: 2rem 0rem;
+}
+
+.game__accesories {
+    display: flex;
+    justify-content: end;
 }
 
 .game__heading {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .game__image {
@@ -486,6 +491,18 @@ a {
 @media screen and (min-width: 768px) {
   .game:nth-of-type(even) .game__content {
     order: 1;
+  }
+
+  .game:nth-of-type(odd) .game__accesories {
+    justify-content: start;
+  }
+
+  .game:nth-of-type(odd) .game__accesories .btn{
+    margin-right: 2rem;
+  }
+
+  .game:nth-of-type(even) .game__accesories .btn {
+    margin-left: 2rem;
   }
 }
 
