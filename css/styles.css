@@ -516,3 +516,46 @@ a {
     margin-bottom: 0;
 }
 
+/* Socials */
+
+.footer__heading {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.btn--social {
+    align-items: center;
+    border-radius: 100%;
+    border: 3px solid var(--color-400);
+    color: var(--color-100);
+    display: inline-flex;
+    justify-items: center;
+    margin:auto;
+    max-width: 1rem;
+    min-width: min-content;
+    padding: 5px;
+}
+
+.list--inline .social--item  {
+    margin-top: 1rem;
+}
+
+.social--item .btn--social {
+    margin-bottom: 1rem;
+}
+
+.social--item .social__name {
+    font-size: 1.3rem;
+}
+
+.social--list {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+    .social--list {
+        display: inline-block;
+    }
+}
