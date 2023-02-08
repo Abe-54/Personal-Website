@@ -370,6 +370,10 @@ a {
     margin-top: 3rem;
 }
 
+.hero-image__container {
+    margin-top: 5rem;
+}
+
 .circle {
     margin:auto;
     max-width: 50vw;
@@ -391,10 +395,6 @@ a {
 
     .hero__image {
         margin-top: 5rem;
-    }
-
-    .hero-image__container {
-        padding-top: 5rem;
     }
 
     .hero__content {
@@ -471,7 +471,7 @@ a {
 }
 
 .project--item {
-    max-width: 60vw;
+    max-width: 100%;
 }
 
 .project__heading {
@@ -568,10 +568,15 @@ a {
     max-width: 110%;
 }
 
+@media screen and (min-width: 700px) {
+    .project--item {
+        max-width: 60dvw;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .project__flex__list {
         flex-direction: row;
-        /* gap: 0rem; */
     }
 }
 
