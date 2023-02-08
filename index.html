@@ -30,7 +30,7 @@
       <li class="nav__item"><a href="#home">Home</a></li>
       <li class="nav__item"><a href="#about">About Me</a></li>
       <li class="nav__item"><a href="#skills">Skills</a></li>
-      <li class="nav__item"><a href="#games">Games</a></li>
+      <li class="nav__item"><a href="#projects">Projects</a></li>
       <li class="nav__item"><a href="#multimedia">Multimedia</a></li>
       <li class="nav__item"><a href="#socials">Socials</a></li>
     </ul>
@@ -41,9 +41,9 @@
       <header class="block__header hero__content">
         <h1 class="block__heading">Abraham Rubio</h1>
         <p class="hero__tagline">
-          Software Engineer | Game Developer | Web Developer
+          Android Developer | Game Developer | Web Developer
           <br><br>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, dignissimos?
+          A developer who enjoys programming and bringing ideas to life through code!
         </p>
 
         <button class="btn btn--primary">Resume</button>
@@ -60,12 +60,17 @@
   <section class="block block--about" id="about">
     <div class="container">
       <article class="grid grid--1x2">
-        <div>
+        <div class="about-me--text">
           <h2 class="section__heading">About Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-            voluptatum consectetur necessitatibus non magnam illum nesciunt,
-            soluta quibusdam deserunt quia!
+          <p> I’m a Software Developer. </p>
+          <p><strong>Officially</strong>, my work is to code websites, program game mechanics, or even create mobile
+            apps. I have to write
+            tests to ensure the code works as intended and fix the numerous bugs that eventually make themselves known.
+          </p>
+
+          <p><strong>But really?</strong> I convert someone’s dream into reality. Whether that be through creating their
+            dream webpage,
+            application, or video game. I break down the problem they want to solve and design a solution for them.</p>
           </p>
         </div>
         <div class="circle circle--about">
@@ -135,59 +140,110 @@
     </div>
   </section>
 
-  <section class="block block--games" id="games">
-    <div class="container">
+  <section class="block block--projects" id="projects">
+    <div class="container continer--projects">
       <header class="block__header">
-        <h2 class="block__heading">Games</h2>
+        <h2 class="block__heading">Projects</h2>
       </header>
-      <article class="grid grid--1x2 game">
-        <div class="game__content">
-          <img class="game__image" src="https://via.placeholder.com/585x375" alt="" />
-          <div class="game__accesories">
-            <ul class="list tools--list">
-              <li class="list__item"><span class="tag tag--primary"><i class="devicon-csharp-plain"></i></span></li>
-              <li class="list__item"><span class="tag tag--primary"><i class="devicon-unity-original"></i></span></li>
-            </ul>
+
+      <div class="project__flex__list">
+        <div class="project--item">
+          <div class="card card--primary card--project card--school-hub">
+            <div class="project__content">
+              <img class="project__image" src="images/school_hub.png" alt="Picture of School Hub android application" />
+            </div>
+            <div class="project__description">
+              <h3 class="project__heading">School Hub</h3>
+              <p>
+                School Hub is an app for students to know what organizations and clubs that exists on campus. It allows
+                for users to connect with different clubs and be notified of any events they organize.
+              </p>
+            </div>
+            <div class="project__accesories">
+              <ul class="list tools--list">
+                <li class="list__item">
+                  <h3 class="list__title">Tech:</h3>
+                </li>
+                <li class="list__item"><span class="tag tag--primary tag--small"><i
+                      class="devicon-java-plain"></i></span>
+                </li>
+                <li class="list__item"><span class="tag tag--primary tag--small"><i
+                      class="devicon-androidstudio-plain"></i></span>
+                </li>
+              </ul>
+            </div>
+            <div class="project__links">
+              <a class="btn btn--primary" href="https://github.com/Abe-54/School-Hub" target="_blank">Github</a>
+            </div>
           </div>
         </div>
-        <div class="game__description">
-          <h3 class="game__heading">Game Title</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias fugiat placeat eligendi
-            molestiae non totam hic eveniet officia autem aut eaque reprehenderit assumenda error sequi soluta deleniti
-            atque adipisci omnis quibusdam aspernatur corrupti, accusantium accusamus beatae. Ut dolorum nihil
-            provident. Nam exercitationem dolorum repudiandae voluptatibus! Assumenda obcaecati error quasi.
-          </p>
-          <div class="game__links">
-            <button class="btn btn--primary">Itch.io</button>
-            <button class="btn btn--primary">Github</button>
+        <div class="project--item">
+          <div class="card card--primary card--project card--gold-rush">
+            <div class="project__content">
+              <img class="project__image" src="images/gold_rush.png" alt="Cover image for gold rush game" />
+            </div>
+            <div class="project__description">
+              <h3 class="project__heading">Gold Rush</h3>
+              <p>
+                This is a short minigame dungeon crawler, where the player is a dinosour and has to beat different
+                minigames to reach the final room that is filled with gold. The game was built within the Unity over the
+                course of two months.
+              </p>
+            </div>
+            <div class="project__accesories">
+              <ul class="list tools--list">
+                <li class="list__item">
+                  <h3 class="list__title">Tech:</h3>
+                </li>
+                <li class="list__item"><span class="tag tag--primary tag--small"><i
+                      class="devicon-csharp-plain"></i></span>
+                </li>
+                <li class="list__item"><span class="tag tag--primary tag--small"><i
+                      class="devicon-unity-original"></i></span>
+                </li>
+              </ul>
+            </div>
+            <div class="project__links">
+              <a class="btn btn--primary" href="https://abe-54.itch.io/gold-rush" target="_blank">Itch.io</a>
+              <a class="btn btn--primary" href="https://github.com/Abe-54/Gold-Rush" target="_blank">Github</a>
+            </div>
           </div>
         </div>
-      </article>
-      <article class="grid grid--1x2 game">
-        <div class="game__content">
-          <img class="game__image" src="https://via.placeholder.com/585x375" alt="" />
-          <div class="game__accesories">
-            <ul class="list tools--list">
-              <li class="list__item"><span class="tag tag--primary"><i class="devicon-csharp-plain"></i></span></li>
-              <li class="list__item"><span class="tag tag--primary"><i class="devicon-unity-original"></i></span></li>
-            </ul>
+        <div class="project--item">
+          <div class="card card--primary card--project card--gem-hunter">
+            <div class="project__content">
+              <img class="project__image" src="images/gem_hunter.png" alt="Cover image for gem hunter game" />
+            </div>
+            <div class="project__description">
+              <h3 class="project__heading">Gem Hunter</h3>
+              <p>
+                This is a short platformer, where the player is an adventurer, exploring a cave to find gems. The game
+                was built within the Unity over the course of a month.
+              </p>
+            </div>
+            <div class="project__accesories">
+              <ul class="list tools--list">
+                <li class="list__item">
+                  <h3 class="list__title">Tech:</h3>
+                </li>
+                <li class="list__item"><span class="tag tag--primary tag--small"><i
+                      class="devicon-csharp-plain"></i></span>
+                </li>
+                <li class="list__item"><span class="tag tag--primary tag--small"><i
+                      class="devicon-unity-original"></i></span>
+                </li>
+              </ul>
+            </div>
+            <div class="project__links">
+              <a class="btn btn--primary" href=https://abe-54.itch.io/gem-hunter" target="_blank">Itch.io</a>
+              <a class="btn btn--primary" href="https://github.com/Abe-54/Gem-Hunter" target="_blank">Github</a>
+            </div>
           </div>
         </div>
-        <div class="game__description">
-          <h3 class="game__heading">Game Title</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias fugiat placeat eligendi
-            molestiae non totam hic eveniet officia autem aut eaque reprehenderit assumenda error sequi soluta deleniti
-            atque adipisci omnis quibusdam aspernatur corrupti, accusantium accusamus beatae. Ut dolorum nihil
-            provident. Nam exercitationem dolorum repudiandae voluptatibus! Assumenda obcaecati error quasi.
-          </p>
-          <div class="game__links">
-            <button class="btn btn--primary">Itch.io</button>
-            <button class="btn btn--primary">Github</button>
-          </div>
-        </div>
-      </article>
+      </div>
+
+
+      <!-- <div class="divider"></div> -->
     </div>
   </section>
 

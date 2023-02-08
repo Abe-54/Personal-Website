@@ -104,17 +104,14 @@ a {
 }
 
 .tag--small {
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
   .tag {
     border-radius: 3rem;
-    font-size: 3rem;
-  }
-  .tag--small {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -323,7 +320,7 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
-    outline: 0;
+    /* outline: 0; */
     padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
@@ -370,7 +367,7 @@ a {
 
 .hero__image {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .circle {
@@ -390,6 +387,10 @@ a {
 @media screen and (min-width: 945px) {
     .hero {
         padding-top: 5rem ;
+    }
+
+    .hero__image {
+        margin-top: 5rem;
     }
 
     .hero-image__container {
@@ -417,7 +418,7 @@ a {
 
 .circle--about {
     background: var(--color-1200);
-    max-width: 50vw;
+    max-width: 75%;
     display: flex;
     align-content: center;
     padding-top: 5rem;
@@ -431,9 +432,13 @@ a {
     margin: 1rem 0;
 }
 
+.about-me--text {
+    max-height: min-content;
+}
+
 @media screen and (min-width: 768px) {
     .circle--about {
-        max-width: 25vw;
+        /* max-width: 25vw; */
     }
 }
 
@@ -459,62 +464,123 @@ a {
     }
 }
 
-/* Games Block*/
+/* Projects Block*/
 
-.block--games {
+.block--project {
     background: var(--color-1200);
 }
 
-.game {
-    gap: 0rem 2rem;
-    margin: 2rem 0rem;
+.project--item {
+    max-width: 60vw;
 }
 
-.game__heading {
+.project__heading {
     margin: 1rem 0;
 }
 
-.game__image {
+.project__image {
     width: 100%;
     margin-bottom: 0;
+}
+
+.divider {
+    height: 20px;
+    width: 100%;
+    background: var(--color-1400);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 3rem;
 }
 
 .tools--list .list__item{
     display: inline-block;
     margin-top: 0rem;
+    margin-bottom: 0rem;
+    
+}
+
+.list__title {
+    margin: 0 0 0 1rem;
+    font-weight: 500;
 }
 
 .tools--list {
-    margin: 0;
+    margin: 0rem;
+    padding: 1rem 0rem;
 }
 
-.game__description {
+.project__description {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0rem 1rem;
+    font-size: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-  .game:nth-of-type(even) .game__content {
-    order: 1;
-  }
-
-  .game:nth-of-type(odd) .game__accesories {
-    justify-content: start;
-  }
-
-  .game:nth-of-type(odd) .game__accesories .btn{
-    margin-right: 2rem;
-  }
-
-  .game:nth-of-type(even) .game__accesories .btn {
-    margin-left: 2rem;
-  }
-
-  .game__description {
-    justify-content: start;
+.project__description p {
+    margin:0;
 }
+
+.project__flex__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem 10rem;
 }
+
+.project__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project__links .btn {
+    border-radius: 10px;
+    padding: 1rem 2vw;
+    transition: all .2s ease-in-out; 
+    font-size: 1.6rem;
+}
+
+.card--project {
+    border-radius: 10px;
+}
+
+.card--school-hub {
+    background: #54585d;
+}
+
+.card--gold-rush {
+    background: #725318;
+}
+
+.card--gem-hunter {
+    background: #383808;
+}
+
+.project__links .btn:hover {
+    transform: scale(1.1); 
+}
+
+.continer--projects {
+    max-width: 110%;
+}
+
+@media screen and (min-width: 1024px) {
+    .project__flex__list {
+        flex-direction: row;
+        /* gap: 0rem; */
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    .project--item {
+        max-width: 20dvw;
+    }
+}
+
 
 /* Multimedia */
 
