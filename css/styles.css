@@ -527,17 +527,17 @@ a {
 
 .project__content--school-hub {
     background: #3f4245;
-    border: 10px solid var(--color-1500);
+    border: 10px solid #333539;
 }
 
 .project__content--gold-rush {
-    background: #2a3132;
-    border: 10px solid #5d4417;
+    background: #443b26;
+    border: 10px solid #1d1b16;
 }
 
 .project__content--gem-hunter {
     background: #202005;
-    border: 10px solid var(--color-1500);
+    border: 10px solid #2a2a12;
 }
 
 .project__image {
