@@ -515,17 +515,38 @@ a {
     background: var(--color-1200);
 }
 
-.project--item {
-    max-width: 100%;
-}
-
 .project__heading {
     margin: 1rem 0;
 }
 
-.project__image {
+.project__content {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project__content--school-hub {
+    background: #3f4245;
+    border: 10px solid var(--color-1500);
+}
+
+.project__content--gold-rush {
+    background: #2a3132;
+    border: 10px solid #5d4417;
+}
+
+.project__content--gem-hunter {
+    background: #202005;
+    border: 10px solid var(--color-1500);
+}
+
+.project__image {
+    max-width: 50%;
     margin-bottom: 0;
+}
+
+.project_image--gem-hunter {
+    max-width: 70%;
 }
 
 .divider {
@@ -542,7 +563,6 @@ a {
     display: inline-block;
     margin-top: 0rem;
     margin-bottom: 0rem;
-    
 }
 
 .list__title {
@@ -564,6 +584,7 @@ a {
 }
 
 .project__description p {
+    font-size: 1.6rem;
     margin:0;
 }
 
@@ -615,7 +636,7 @@ a {
 
 @media screen and (min-width: 700px) {
     .project--item {
-        max-width: 60dvw;
+        max-width: min-content;
     }
 }
 
