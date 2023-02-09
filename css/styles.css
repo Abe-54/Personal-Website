@@ -483,7 +483,7 @@ a {
 
     .circle--about {
         grid-column: 3 / span 2;
-        max-width: 100%;
+        max-height: 100%;
     }
 }
 
@@ -653,6 +653,10 @@ a {
 }
 
 /* Socials */
+
+.block--social {
+    background: var(--color-1500);
+}
 
 .footer__heading {
     font-weight: 300;
