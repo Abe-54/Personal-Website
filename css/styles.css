@@ -636,7 +636,7 @@ a {
 
 @media screen and (min-width: 700px) {
     .project--item {
-        max-width: min-content;
+        max-width: 40dvw;
     }
 }
 
