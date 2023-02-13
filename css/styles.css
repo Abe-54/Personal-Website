@@ -381,7 +381,13 @@ a {
 }
 
 .btn--resume {
-    max-width: fit-content  ;
+    max-width: fit-content;
+    box-shadow: 0 0 10px 1px var(--color-1600);
+    transition: all 0.15s;
+}
+
+.btn--resume:hover {
+    scale: 1.1;
 }
 
 .hero__image {
@@ -404,7 +410,7 @@ a {
 
 .circle--profile {
     background: var(--color-1200);
-    box-shadow: 0 0 10px 1px var(--color-1500);
+    box-shadow: 0 0 10px 1px var(--color-1600);
 }
 
 @media screen and (min-width: 945px) {
@@ -551,8 +557,8 @@ a {
 
 .divider {
     height: 20px;
-    width: 100%;
-    background: var(--color-1400);
+    width: 10%;
+    background: var(--color-1200);
     display: flex;
     justify-content: center;
     margin: auto;
@@ -590,7 +596,7 @@ a {
 
 .project__flex__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
@@ -640,12 +646,6 @@ a {
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .project__flex__list {
-        flex-direction: row;
-    }
-}
-
 @media screen and (min-width: 1230px) {
     .project--item {
         max-width: 20dvw;
@@ -656,22 +656,32 @@ a {
 /* Multimedia */
 
 .block--multimedia {
-    background: var(--color-1500);
+    background: var(--color-1400);
+}
+
+.container--multimedia .media:not(:nth-child(2), :last-child) {
+    margin: 4rem 0rem;
 }
 
 .media {
   gap: 0rem 2rem;
-  margin: 2rem 0rem;
 }
 
 .media__heading {
-  margin: 1rem 0;
+  margin: 0;
 }
 
 .media__image {
     width: 100%;
     margin-bottom: 0;
 }
+
+@media screen and (min-width: 768px) {
+    .media:nth-of-type(even) .media__content {
+        order: 2;
+    }
+}
+  
 
 /* Socials */
 
