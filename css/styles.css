@@ -506,7 +506,31 @@ a {
   
 .block--skills .card {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__header--skills {
+    flex: 0 1 auto;
+}
+
+.card__body--skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.list--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container--skills {
+    max-width: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -636,7 +660,7 @@ a {
     transform: scale(1.1); 
 }
 
-.continer--projects {
+.container--projects {
     max-width: 110%;
 }
 
