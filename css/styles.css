@@ -699,6 +699,13 @@ a {
     margin-bottom: 0;
 }
 
+.podcast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 768px) {
     .media:nth-of-type(even) .media__content {
         order: 2;
