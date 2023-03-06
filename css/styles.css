@@ -505,6 +505,7 @@ a {
   
 .block--skills .card {
     max-width: 500px;
+    min-width: 100%;
     margin: 0 0;
     height: 100%;
     display: flex;
