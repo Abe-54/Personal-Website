@@ -707,6 +707,25 @@ a {
     margin-bottom: 2rem;
 }
 
+.media__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.concept {
+    width: 100%;
+    height: 375px;
+}
+
+.concept iframe {
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (min-width: 768px) {
     .media:nth-of-type(even) .media__content {
         order: 2;
@@ -728,15 +747,9 @@ a {
 
 .btn--social {
     align-items: center;
-    border-radius: 100%;
-    border: 3px solid var(--color-400);
     color: var(--color-100);
     display: inline-flex;
     justify-items: center;
-    margin:auto;
-    max-width: 1rem;
-    min-width: min-content;
-    padding: 5px;
 }
 
 .list--inline .social--item  {
@@ -763,6 +776,11 @@ a {
     font-size: 1.3rem;
     margin-bottom: 0;
 }
+
+.link__symbol {
+    font-size: 2rem;
+}
+
 
 @media screen and (min-width: 768px) {
     .social--list {
