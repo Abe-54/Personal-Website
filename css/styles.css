@@ -726,7 +726,12 @@ a {
     height: 100%;
 }
 
-@media screen and (min-width: 768px) {
+.client_project {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px var(--color-1500);
+}
+
+@media screen and (min-width: 940px) {
     .media:nth-of-type(even) .media__content {
         order: 2;
     }
