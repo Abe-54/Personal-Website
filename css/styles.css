@@ -380,42 +380,20 @@ a {
     padding-bottom: 2rem;
     line-height: 5.2rem;
     margin-bottom: 0;
-    font-family: 'Source Code Pro', monospace;
     font-weight: 800;
 }
-
 .hero__tagline {
     font-size: 2rem;
     color: var(--color-200);
-    font-family: 'Source Code Pro', monospace;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+#animated_tag{
+    color: var(--color-900);
     font-weight: 800;
 }
-
-.hero_tagline__container {
-    position: relative;
-}
-
-.hero__tagline__text_hide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--color-1500);
-}
-
-.hero__tagline__text_cursor {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-    border-left: 3px solid white;
-}
-
-
 .btn--resume {
     max-width: fit-content;
     box-shadow: 0 0 10px 1px var(--color-1600);
