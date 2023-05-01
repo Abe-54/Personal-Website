@@ -14,7 +14,8 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0" />
   <link
     href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&family=Outfit:wght@400;500;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" type="image/x-icon" href="/images/Abraham_Favicon.png" />
@@ -38,19 +39,26 @@
   </nav>
 
   <section class="block block--dark hero" id="home">
-    <div class="container grid grid--1x2">
+    <div class="container container--hero grid grid--1x2">
       <header class="block__header hero__content">
         <h1 class="block__heading block__heading--hero">Abraham Rubio</h1>
-        <p class="hero__tagline">
-          A developer who brings ideas to life through code!
-        </p>
+        <div class="hero__tagline">
+          I'm a
+          <span class="hero_tagline__container">
+            <span class="hero__tagline__text_hide"></span>
+            <span class="hero__tagline__text">game developer</span>
+            <span class="hero__tagline__text_cursor"></span>
+          </span>
+        </div>
+        
 
         <a class="btn btn--primary btn--resume" href="pdfs/resume.pdf" target="_blank">Resume</a>
       </header>
       <div class="container hero-image__container">
-        <div class="circle circle--profile">
+        <div class="hero-image__holder">
+          <div class="circle circle--profile"></div>
           <img class="hero__image" src="images/Professional_Picture_2k_NoBG.png"
-            alt="Professional Photo of Abrham Rubio" />
+            alt="Professional Photo of Abraham Rubio" />
         </div>
       </div>
     </div>
@@ -62,15 +70,14 @@
         <div class="about-me--text">
           <h2 class="section__heading">About Me</h2>
           <div class="about-me--description">
-            <strong>Hello!</strong> 
-            <br/><br/>
-            My name is Abraham Rubio and I enjoy creating things through code. 
-            My interest in code started back in 2014, when I decided to try making my own minecraft mod. 
-            This taught me a lot about how Java works and the power of computer programming.
-            <br/><br/>
-            Fast forward to today, and I am working on expanding my programming expertise from game development to web development. 
-            My main focus at the moment is building a full-stack web app using React, Node, MySQL, & Prisma.
-
+            <p><strong>Hello!</strong></p>
+            <p>My name is Abraham Rubio and I enjoy creating things through code. My interest in this started back in 2014, when I decided to try
+              making my own minecraft mod.
+              This taught me a lot about how Java works and the power of computer programming.</p>
+            <p>Fast forward to today, and I am working on expanding my programming expertise from game development to
+              web
+              development.
+              My main focus at the moment is building a full-stack web app using React, NodeJS, & MySQL.</p>
           </div>
         </div>
         <div class="circle circle--about">
@@ -145,6 +152,12 @@
                   </li>
                   <li class="list__item"><i class="devicon-react-original"></i>
                     <p>React</p>
+                  </li>
+                  <li class="list__item"><i class="devicon-nodejs-plain"></i>
+                    <p>NodeJS</p>
+                  </li>
+                  <li class="list__item"><i class="devicon-mysql-plain"></i>
+                    <p>MySQL</p>
                   </li>
                 </ul>
               </div>
@@ -268,7 +281,7 @@
       <header class="block__header">
         <h2 class="block__heading">Multimedia</h2>
       </header>
-      <article class="grid grid--1x2 media">
+      <article class="grid grid--1x2 media media--podcast">
         <div class="media__content podcast">
           <audio controls src="audio/podcast.mp3" />
         </div>
@@ -276,7 +289,7 @@
           <h3 class="media__heading">Storytelling in Gaming Podcast</h3>
           <p class="artist__statement">
             <br />
-            <strong>Artist Statement:</strong> The main goal of creating this podcast is to explore what storytelling is
+            The main goal of creating this podcast is to explore what storytelling is
             when it comes to video games and to learn a little more about Raymond Arriagada.
             As he is a senior in game design, I wanted to get his perspective on game development and how he approached
             it.
@@ -290,7 +303,7 @@
         </div>
       </article>
 
-      <article class="grid grid--1x2 media">
+      <article class="grid grid--1x2 media media--concept">
         <div class="media__content">
           <div class="concept">
             <iframe src="https://www.youtube.com/embed/FWSExO6-qCk" frameBorder="0">
@@ -301,7 +314,7 @@
           <h3 class="media__heading">Puerto Rico Ruins in 60</h3>
           <p class="artist__statement">
             <br />
-            <strong>Artist Statement:</strong> In this short video, I chose to explore some ruins I visited during a
+            In this short video, I chose to explore some ruins I visited during a
             recent trip to Puerto Rico. As a game
             developer, I enjoy taking inspiration from real-world locations to add to my games. The goals were to
             inspire appreciation of these types of locations and see what has become of them over the years. In the
@@ -317,46 +330,51 @@
         </div>
       </article>
 
-      <article class="grid grid--1x2 media">
+      <article class="grid grid--1x2 media media--client_project">
         <div class="media__content">
-          <a href="https://bloomfieldmagazine.wixsite.com/litmagazine" target="_blank"> 
+          <a href="https://bloomfieldmagazine.wixsite.com/litmagazine" target="_blank">
             <img class="media__image client_project" src="/images/Client_Home_Page.png" alt="" />
           </a>
         </div>
         <div>
           <h3 class="media__heading">Client Project - Literary Magazine</h3>
           <p class="artist__statement">
-            <br/>
-            <strong>Artist Statement:</strong>The main goal for the client project was to improve upon last year’s website’s design and  showcase the student body’s work in one easy to access central location.
-            <br/><br/>
-            As I was working on this project, I decided to use the previous website as inspiration to design this year's website. I discussed with my team and the client to ensure the project was what they desired. After looking at last year’s website, I made sure to take the parts that I thought worked and removed what I thought did not. All of this led to the final design of the website. 
-            <br/><br/>
-            My process to capture content for the website was to first decide on the layout of each page on the website. Once I had a rough layout of the page, I’d go in and add some color and ensure it had the theme that the client requested. Then I’d ensure that the student content was going to be easily accessible and displayed. Finally, I’d use the feedback I got from the usability tests and implement the suggestions I received.
+            <br />
+            The main goal for the client project was to improve upon last year’s
+            website’s design and showcase the student body’s work in one easy to access central location.
+            <br /><br />
+            As I was working on this project, I decided to use the previous website as inspiration to design this year's
+            website. I discussed with my team and the client to ensure the project was what they desired. After looking
+            at last year’s website, I made sure to take the parts that I thought worked and removed what I thought did
+            not. All of this led to the final design of the website.
+            <br /><br />
+            My process to capture content for the website was to first decide on the layout of each page on the website.
+            Once I had a rough layout of the page, I’d go in and add some color and ensure it had the theme that the
+            client requested. Then I’d ensure that the student content was going to be easily accessible and displayed.
+            Finally, I’d use the feedback I got from the usability tests and implement the suggestions I received.
           </p>
         </div>
       </article>
     </div>
-
-
   </section>
 
   <!-- END OF MULTIMEDIA SECTION -->
 
   <section class="block block--social" id="socials">
-    <div class="container">
+    <div class="container container--footer">
       <div class="block__header">
         <header>
           <h2 class="footer__heading">Abraham Rubio</h2>
         </header>
         <ul class="list list--inline social--list">
           <li class="list__item social--item">
-            <a class="btn--social" href="https://www.linkedin.com/in/abraham-rubio/" target="_blank">
+            <a class="btn--social btn--linkedIn" href="https://www.linkedin.com/in/abraham-rubio/" target="_blank">
               <i class="devicon-linkedin-plain link__symbol"></i>
             </a>
             <p class="social__name">LinkedIn</p>
           </li>
           <li class="list__item social--item">
-            <a class="btn--social" href="https://abe-54.itch.io/" target="_blank">
+            <a class="btn--social btn--itch" href="https://abe-54.itch.io/" target="_blank">
               <span class="material-symbols-outlined link__symbol">
                 link
               </span>
@@ -364,7 +382,7 @@
             <p class="social__name">Itch.io</p>
           </li>
           <li class="list__item social--item">
-            <a class="btn--social" href="https://github.com/Abe-54" target="_blank">
+            <a class="btn--social btn--github" href="https://github.com/Abe-54" target="_blank">
               <i class="devicon-github-original link__symbol"></i>
             </a>
             <p class="social__name">Github</p>
