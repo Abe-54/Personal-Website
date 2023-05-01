@@ -394,6 +394,11 @@ a {
     color: var(--color-900);
     font-weight: 800;
 }
+
+.typed-cursor {
+    color: var(--color-900);
+}
+
 .btn--resume {
     max-width: fit-content;
     box-shadow: 0 0 10px 1px var(--color-1600);

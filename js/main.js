@@ -12,8 +12,10 @@ window.onscroll = () => {
 };
 
 var typed = new Typed("#animated_tag", {
-  strings: ["Web Developer", "Game Creator", "Programmer"],
-  typeSpeed: 50,
+  strings: ["Web Developer", "Game Programmer", "Software Engineer"],
+  typeSpeed: 100,
   backSpeed: 50,
   loop: true,
+  cursorChar: "_",
+  backDelay: 500,
 });
