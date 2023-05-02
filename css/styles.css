@@ -33,7 +33,6 @@ body {
     margin: 0;
     width: 100%;
     font-family: Outfit, Arial, Helvetica, sans-serif;
-    /* font-family: 'Source Code Pro', monospace; */
     font-size: 2.4rem;
     line-height: 1.5;
     color: var(--color-100);
@@ -364,6 +363,10 @@ a {
     max-width: 1380px;
 } */
 
+.hero {
+    /* height: 100vh; */
+}
+
 .hero__content {
     display: flex;
     flex-direction: column;
@@ -397,6 +400,11 @@ a {
 
 .typed-cursor {
     color: var(--color-900);
+}
+
+.hero__tagline__text__animated::before {
+    content: "\a";
+    white-space: pre;
 }
 
 .btn--resume {
@@ -465,9 +473,9 @@ a {
         align-items: start;
     }
 
-    /* .hero__tagline {
-        
-    } */
+    .hero__tagline__text::before {
+        content: "";
+    }
 
     .hero__content .btn {
         align-self: center;
